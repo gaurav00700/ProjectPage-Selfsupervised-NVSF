@@ -66,7 +66,7 @@
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">AVL Software and Functions GmbH<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -163,38 +163,54 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          NVSF Network
-        </h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img class="carousel-image" src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">NVSF Network</h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img class="carousel-image" src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison of Point cloud synthesis with LiDARNeRF and LiDAR4D
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img class="carousel-image" src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Novel View Synthesis for LiDAR and Camera
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img class="carousel-image" src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison of Camera View Synthesis 
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Comparison of Point cloud synthesis with LiDARNeRF and LiDAR4D
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Novel View Synthesis fro LiDAR and Camera
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Comparison of Camera View Synthesis 
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
+
+<!-- CSS for the carousel images -->
+<style>
+  .carousel-image {
+    width: 100%;        /* Ensure the image takes up full width of its container */
+    max-height: 500px;  /* Set a max height to prevent oversized images */
+    object-fit: cover;  /* This ensures the image scales properly while keeping aspect ratio */
+    display: block;     /* Make the image a block element for better layout control */
+    margin: 0 auto;     /* Center the image horizontally */
+  }
+  
+  /* You can adjust the max-height according to your requirements */
+  @media (max-width: 768px) {
+    .carousel-image {
+      max-height: 300px; /* Smaller height for smaller screens */
+    }
+  }
+</style>
 <!-- End image carousel -->
 
 <!-- Youtube video -->
